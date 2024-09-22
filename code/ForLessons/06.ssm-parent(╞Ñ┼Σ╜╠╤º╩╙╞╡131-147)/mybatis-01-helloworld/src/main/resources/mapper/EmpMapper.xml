@@ -11,14 +11,14 @@ select 标签代表一次查询
    id：绑定方法名
    resultType：返回值类型
 -->
-    <select id="getEmpById" resultType="com.atguigu.mybatis.bean.Emp">
+    <select id="getEmpById" resultType="com.atguigu.mybatis.domain.Emp">
         select id,emp_name empName,age,emp_salary empSalary
            from t_emp where id = ${id}
     </select>
 
 
 <!--   返回的是集合，不用管集合， resultType 还写对象类型（集合中的元素类型）-->
-    <select id="getAll" resultType="com.atguigu.mybatis.bean.Emp">
+    <select id="getAll" resultType="com.atguigu.mybatis.domain.Emp">
         select * from t_emp
     </select>
 
@@ -51,7 +51,7 @@ select 标签代表一次查询
 #{}：参数位置动态取值，安全，无SQL注入问题
 ${}：JDBC层面 表名等位置 不支持预编译，只能用 ${}
   -->
-    <select id="getEmpById02" resultType="com.atguigu.mybatis.bean.Emp">
+    <select id="getEmpById02" resultType="com.atguigu.mybatis.domain.Emp">
         select id,emp_name empName,age,emp_salary empSalary
         from ${tableName} where id = #{id}
     </select>

@@ -1,7 +1,7 @@
 package com.atguigu.mybatis.service;
 
 
-import com.atguigu.mybatis.bean.Emp;
+import com.atguigu.mybatis.domain.Emp;
 import com.atguigu.mybatis.mapper.EmpDynamicSQLMapper;
 import com.atguigu.mybatis.mapper.EmpMapper;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -15,13 +15,13 @@
     </select>
 
     <!--   返回集合，写集合中元素类型 -->
-    <select id="getAll" resultType="com.atguigu.mybatis.bean.Emp">
+    <select id="getAll" resultType="com.atguigu.mybatis.domain.Emp">
         select *
         from t_emp
     </select>
 
     <!-- 返回map集合，  resultType 写map中value元素类型 -->
-    <select id="getAllMap" resultType="com.atguigu.mybatis.bean.Emp">
+    <select id="getAllMap" resultType="com.atguigu.mybatis.domain.Emp">
         select *
         from t_emp
     </select>
@@ -32,7 +32,7 @@
         自定义结果集（resultMap）：我们来告诉MyBatis 如何把结果封装到Bean中;
              明确指定每一列如何封装到指定的Bean中
       -->
-    <resultMap id="EmpRM" type="com.atguigu.mybatis.bean.Emp">
+    <resultMap id="EmpRM" type="com.atguigu.mybatis.domain.Emp">
         <!--id：声明主键映射规则-->
         <id column="id" property="id"></id>
         <!--result：声明普通列映射规则-->

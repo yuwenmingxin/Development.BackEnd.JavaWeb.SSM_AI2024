@@ -18,7 +18,7 @@
          test：判断条件； java代码怎么写，它怎么写
      where标签：解决 where 后面 语法错误问题（多and、or, 无任何条件多where）
      -->
-<!--    <select id="queryEmpByNameAndSalary" resultType="com.atguigu.mybatis.bean.Emp">-->
+<!--    <select id="queryEmpByNameAndSalary" resultType="com.atguigu.mybatis.domain.Emp">-->
 <!--        select * from t_emp-->
 <!--        <where>-->
 <!--            <if test="name != null">-->
@@ -39,7 +39,7 @@
     suffixOverrides：后缀覆盖
 
 -->
-    <select id="queryEmpByNameAndSalary" resultType="com.atguigu.mybatis.bean.Emp">
+    <select id="queryEmpByNameAndSalary" resultType="com.atguigu.mybatis.domain.Emp">
         select * from t_emp
         <trim prefix="where" prefixOverrides="and || or">
             <if test="name != null">
@@ -110,7 +110,7 @@ suffix="where id = #{id}"
     </update>
 
 
-    <select id="queryEmpByNameAndSalaryWhen" resultType="com.atguigu.mybatis.bean.Emp">
+    <select id="queryEmpByNameAndSalaryWhen" resultType="com.atguigu.mybatis.domain.Emp">
         select * from t_emp
         <where>
             <choose>
@@ -136,7 +136,7 @@ foreach: 遍历List,Set,Map,数组
         close：遍历结束后缀
 -->
 
-    <select id="getEmpsByIdIn" resultType="com.atguigu.mybatis.bean.Emp">
+    <select id="getEmpsByIdIn" resultType="com.atguigu.mybatis.domain.Emp">
         select
             <include refid="column_names"></include>
             from t_emp

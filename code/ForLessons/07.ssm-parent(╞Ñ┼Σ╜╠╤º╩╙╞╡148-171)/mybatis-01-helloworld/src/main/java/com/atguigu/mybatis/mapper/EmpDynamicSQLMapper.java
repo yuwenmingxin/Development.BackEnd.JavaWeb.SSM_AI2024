@@ -1,8 +1,8 @@
 package com.atguigu.mybatis.mapper;
 
 
-import com.atguigu.mybatis.bean.Emp;
-import com.atguigu.mybatis.bean.Order;
+import com.atguigu.mybatis.domain.Emp;
+import com.atguigu.mybatis.domain.Order;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

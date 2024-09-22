@@ -1,6 +1,6 @@
 package com.atguigu.mybatis.mapper;
 
-import com.atguigu.mybatis.bean.TDepartment;
+import com.atguigu.mybatis.domain.TDepartment;
 
 /**
 * @author lfy

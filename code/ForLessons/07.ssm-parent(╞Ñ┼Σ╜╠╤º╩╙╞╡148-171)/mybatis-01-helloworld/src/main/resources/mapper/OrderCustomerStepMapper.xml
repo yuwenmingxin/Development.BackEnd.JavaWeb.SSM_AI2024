@@ -10,8 +10,8 @@
         where id = #{id}
     </select>
 
-    <!--   按照客户id查询他的所有订单  resultType="com.atguigu.mybatis.bean.Order" -->
-    <select id="getOrdersByCustomerId" resultType="com.atguigu.mybatis.bean.Order">
+    <!--   按照客户id查询他的所有订单  resultType="com.atguigu.mybatis.domain.Order" -->
+    <select id="getOrdersByCustomerId" resultType="com.atguigu.mybatis.domain.Order">
         select *
         from t_order
         where customer_id = #{cId}
@@ -19,7 +19,7 @@
 
 
     <!--   分步查询的自定义结果集： -->
-    <resultMap id="CustomerOrdersStepRM" type="com.atguigu.mybatis.bean.Customer">
+    <resultMap id="CustomerOrdersStepRM" type="com.atguigu.mybatis.domain.Customer">
         <id column="id" property="id"></id>
         <result column="customer_name" property="customerName"></result>
         <result column="phone" property="phone"></result>
@@ -46,7 +46,7 @@
 
 
     <!--   分步查询：自定义结果集；封装订单的分步查询  -->
-    <resultMap id="OrderCustomerStepRM" type="com.atguigu.mybatis.bean.Order">
+    <resultMap id="OrderCustomerStepRM" type="com.atguigu.mybatis.domain.Order">
         <id column="id" property="id"></id>
         <result column="address" property="address"></result>
         <result column="amount" property="amount"></result>

@@ -1,8 +1,8 @@
 package com.atguigu.mybatis;
 
 
-import com.atguigu.mybatis.bean.Customer;
-import com.atguigu.mybatis.bean.Order;
+import com.atguigu.mybatis.domain.Customer;
+import com.atguigu.mybatis.domain.Order;
 import com.atguigu.mybatis.mapper.CustomerMapper;
 import com.atguigu.mybatis.mapper.OrderMapper;
 import org.junit.jupiter.api.Test;

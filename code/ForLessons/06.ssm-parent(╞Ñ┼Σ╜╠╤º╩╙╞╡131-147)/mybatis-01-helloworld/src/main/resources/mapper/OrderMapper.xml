@@ -4,14 +4,14 @@
 
 
     <!--   自定义结果集 -->
-    <resultMap id="OrderRM" type="com.atguigu.mybatis.bean.Order">
+    <resultMap id="OrderRM" type="com.atguigu.mybatis.domain.Order">
         <id column="id" property="id"></id>
         <result column="address" property="address"></result>
         <result column="amount" property="amount"></result>
         <result column="customer_id" property="customerId"></result>
         <!--      一对一关联封装  -->
         <association property="customer"
-                     javaType="com.atguigu.mybatis.bean.Customer">
+                     javaType="com.atguigu.mybatis.domain.Customer">
             <id column="c_id" property="id"></id>
             <result column="customer_name" property="customerName"></result>
             <result column="phone" property="phone"></result>

@@ -1,17 +1,15 @@
 package com.atguigu.mybatis;
 
-import com.atguigu.mybatis.bean.Emp;
+import com.atguigu.mybatis.domain.Emp;
 import com.atguigu.mybatis.mapper.EmpMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.sql.DataSource;
-import java.lang.reflect.Proxy;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.List;
 
 @SpringBootTest

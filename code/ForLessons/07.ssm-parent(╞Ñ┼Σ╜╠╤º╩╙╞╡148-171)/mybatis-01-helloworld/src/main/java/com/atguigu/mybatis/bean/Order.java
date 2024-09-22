@@ -1,4 +1,4 @@
-package com.atguigu.mybatis.bean;
+package com.atguigu.mybatis.domain;
 
 
 import lombok.Data;

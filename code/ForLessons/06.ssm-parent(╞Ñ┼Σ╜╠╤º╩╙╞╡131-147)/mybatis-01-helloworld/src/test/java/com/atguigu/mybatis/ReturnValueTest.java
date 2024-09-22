@@ -1,7 +1,7 @@
 package com.atguigu.mybatis;
 
 
-import com.atguigu.mybatis.bean.Emp;
+import com.atguigu.mybatis.domain.Emp;
 import com.atguigu.mybatis.mapper.EmpReturnValueMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

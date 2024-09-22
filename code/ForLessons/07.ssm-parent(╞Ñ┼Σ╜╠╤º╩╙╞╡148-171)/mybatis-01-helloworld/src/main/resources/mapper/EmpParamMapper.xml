@@ -8,11 +8,11 @@
         insert into t_emp(emp_name,age) values (#{name},#{age})
     </insert>
 
-    <select id="getEmploy" resultType="com.atguigu.mybatis.bean.Emp">
+    <select id="getEmploy" resultType="com.atguigu.mybatis.domain.Emp">
         select * from t_emp where id = #{id}
     </select>
 
-    <select id="getEmploy02" resultType="com.atguigu.mybatis.bean.Emp">
+    <select id="getEmploy02" resultType="com.atguigu.mybatis.domain.Emp">
         select * from t_emp where id = #{ids[1]}
     </select>
 
@@ -20,12 +20,12 @@
     新版 MyBatis支持多个参数情况下，直接用 #{参数名}
     老版 MyBatis不支持以上操作，需要用 @Param 注解指定参数名
 -->
-    <select id="getEmployByIdAndName" resultType="com.atguigu.mybatis.bean.Emp">
+    <select id="getEmployByIdAndName" resultType="com.atguigu.mybatis.domain.Emp">
         select * from t_emp where id = #{id} and emp_name = #{empName}
     </select>
 
 
-    <select id="getEmployHaha" resultType="com.atguigu.mybatis.bean.Emp">
+    <select id="getEmployHaha" resultType="com.atguigu.mybatis.domain.Emp">
         select * from t_emp where id = #{id}
                               and emp_name = #{m.name}
                               and age = #{ids[2]}

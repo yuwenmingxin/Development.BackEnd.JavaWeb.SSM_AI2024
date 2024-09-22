@@ -1,8 +1,8 @@
 package com.atguigu.mybatis.controller;
 
 
-import com.atguigu.mybatis.bean.Emp;
-import com.atguigu.mybatis.bean.Order;
+import com.atguigu.mybatis.domain.Emp;
+import com.atguigu.mybatis.domain.Order;
 import com.atguigu.mybatis.mapper.OrderCustomerStepMapper;
 import com.atguigu.mybatis.service.EmpService;
 import com.github.pagehelper.PageHelper;

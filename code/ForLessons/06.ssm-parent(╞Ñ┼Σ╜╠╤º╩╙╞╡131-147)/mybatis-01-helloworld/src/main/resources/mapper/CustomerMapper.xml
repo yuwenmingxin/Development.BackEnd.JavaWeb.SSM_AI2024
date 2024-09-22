@@ -4,7 +4,7 @@
 
 
 
-    <resultMap id="CutomerRM" type="com.atguigu.mybatis.bean.Customer">
+    <resultMap id="CutomerRM" type="com.atguigu.mybatis.domain.Customer">
         <id column="c_id" property="id"></id>
         <result column="customer_name" property="customerName"></result>
         <result column="phone" property="phone"></result>
@@ -12,7 +12,7 @@
 collection：说明 一对N 的封装规则
 ofType: 集合中元素的类型
 -->
-        <collection property="orders" ofType="com.atguigu.mybatis.bean.Order">
+        <collection property="orders" ofType="com.atguigu.mybatis.domain.Order">
             <id column="id" property="id"></id>
             <result column="address" property="address"></result>
             <result column="amount" property="amount"></result>
